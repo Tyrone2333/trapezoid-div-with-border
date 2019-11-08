@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .shape {
+      width: 400px;
+      height: 40px;
+      background-color: #f6b7b7;
+      clip-path: polygon(0 0, 89% 0, 100.5% 100%, 0 100%, 0 25px);
+      position: relative;
+    }
+
+    .shape:before {
+      content: '';
+      width: 398px;
+      height: 38px;
+      clip-path: polygon(0 0, 89% 0, 100% 100%, 0 100%, 0 25px);
+      background: #e5e5e5;
+      display: block;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="shape"></div>
+<script>
+
+</script>
+</body>
+</html>
